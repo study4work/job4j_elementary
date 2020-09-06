@@ -19,7 +19,7 @@ public class ConverterTest {
     @Test
     public void rubleToDollar() {
         double in = 140;
-        double expected = 2.3333333333333335;
+        double expected = 2.33;
         double out = Converter.rubleToDollar(in);
         Assert.assertEquals(expected, out, 0.01);
 
