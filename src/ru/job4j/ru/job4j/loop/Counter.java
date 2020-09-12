@@ -1,12 +1,10 @@
 package ru.job4j.ru.job4j.loop;
 
-import java.time.chrono.MinguoDate;
-
 public class Counter {
     public static int sum(int start, int finish) {
         int sum = 0;
         int count = finish - start;
-        for (int index = 0; index <= count; index++) {
+        for (int index = start; index <= finish; index++) {
             sum = sum + start + index;
         }
         return sum;
