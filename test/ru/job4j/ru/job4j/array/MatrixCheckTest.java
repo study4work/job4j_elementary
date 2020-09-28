@@ -28,4 +28,15 @@ public class MatrixCheckTest {
         char[] expect = {'X', 'X', 'X'};
         assertThat(result, is(expect));
     }
-}
+
+        @Test
+        public void whenHasMonoVertical() {
+            char[][] input = {
+                    {' ', ' ', 'X'},
+                    {' ', ' ', 'X'},
+                    {' ', ' ', 'X'},
+            };
+            boolean result = MonoVertical.monoVertical(input, 2);
+            assertThat(result, is(true));
+        }
+    }
