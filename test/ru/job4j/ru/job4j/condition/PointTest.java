@@ -41,4 +41,13 @@ import static org.junit.Assert.*;
             double dist = a.distance(b);
             Assert.assertEquals(expected, dist, 0.01);
         }
+
+        @Test
+        public void when823to943to653then7() {
+            double expected = 7;
+            Point a = new Point(8, 2, 3);
+            Point b = new Point(9, 4, 3);
+            double dist = a.distance3d(b);
+            Assert.assertEquals(expected, dist, 0.1);
+        }
     }
